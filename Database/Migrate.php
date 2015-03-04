@@ -1,8 +1,21 @@
 <?php
 namespace Nogo\Framework\Database;
 
+/**
+ * Migrate - Run database migration with pdo.
+ *
+ * @author Danilo Kühn <dk@nogo-software.de>
+ * @package Database
+ */
 class Migrate
 {
+    /**
+     * Run migration from path. Files must end with '.sql'.
+     *
+     * @param \PDO $pdo
+     * @param type $path Path of files with .sql extension.
+     * @return type
+     */
     public static function run(\PDO $pdo, $path)
     {
         $result = [];
@@ -18,6 +31,13 @@ class Migrate
         return $result;
     }
 
+    /**
+     * Retrieve queries from migration files
+     * 
+     * @param string $path
+     * @return array
+     * @throws \Exception
+     */
     protected static function extract($path)
     {
         $queries = [];

@@ -17,13 +17,7 @@
         "symfony/yaml": "2.6.*",
         "hampel/json": "~2.0"
     },
-    "require-dev": {
-        "phpunit/phpunit": "*"
-    },
     "autoload": {
         "psr-0": {"": "src/"}
-    },
-    "config": {
-        "bin-dir": "bin"
     }
 }

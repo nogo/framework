@@ -3,7 +3,7 @@ namespace Nogo\Framework\Controller;
 
 use Slim\Slim;
 
-interface Controller
+interface SlimController
 {
     public function enable(Slim $app);
 }
