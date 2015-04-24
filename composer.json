@@ -14,8 +14,7 @@
         "slim/slim": "2.*",
         "aura/sql": "2.*",
         "aura/sqlquery": "2.*",
-        "aura/filter": "dev-develop-2",
-        "aura/sqlschema": "dev-master",
+        "aura/sqlschema": "2.*",
         "symfony/yaml": "2.6.*"
     },
     "require-dev": {

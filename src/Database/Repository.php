@@ -1,7 +1,6 @@
 <?php
 namespace Nogo\Framework\Database;
 
-use Aura\Filter\Filter;
 use Aura\Sql\ExtendedPdo;
 use Aura\SqlQuery\QueryFactory;
 use Nogo\Framework\Database\Relation;
@@ -12,7 +11,7 @@ use Nogo\Framework\Database\Scope;
  */
 interface Repository {
 
-    public function __construct($name, array $columns, ExtendedPdo $connection, QueryFactory $factory, Filter $filter);
+    public function __construct($name, array $columns, ExtendedPdo $connection, QueryFactory $factory);
 
     /**
      * @return string table identifier
