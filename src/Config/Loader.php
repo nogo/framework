@@ -1,7 +1,7 @@
 <?php
 namespace Nogo\Framework\Config;
 
-use Nogo\Framework\Config\FileNotFoundException;
+use Nogo\Framework\Exception\FileNotFoundException;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
