@@ -7,9 +7,7 @@ NoGo framwork sit on top of Slim framework to provide a MVC like structure.
 ## Comes with
 
 - Configuration management
-- Database connector and migration
 - Controller interface
-- Repository interface
 - Twig template
 
 ## Controller interface
@@ -34,5 +32,21 @@ class MyController implements Controller
         // do something
     }
 }
+
+```
+
+## Your index.php
+
+
+```
+define('ROOT_DIR', realpath(dirname(__FILE__) . '/../' ));
+require_once ROOT_DIR . '/vendor/autoload.php';
+
+$bootstrap = new \Nogo\Framework\Bootstrap(new Slim\Slim());
+$bootstrap
+        ->configure(ROOT_DIR . '/app/config.yml')
+        ->log()
+        ->route()
+        ->run();
 
 ```
